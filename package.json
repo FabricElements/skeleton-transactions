@@ -27,8 +27,13 @@
     "update-types": "gen-typescript-declarations --deleteExisting --outDir ."
   },
   "dependencies": {
-    "@polymer/polymer": "^3.0.0",
-    "@polymer/gen-typescript-declarations": "^1.2.2"
+    "@polymer/app-layout": "^3.0.1",
+    "@polymer/gen-typescript-declarations": "^1.2.2",
+    "@polymer/iron-icon": "^3.0.1",
+    "@polymer/iron-iconset-svg": "^3.0.1",
+    "@polymer/paper-item": "github:PolymerElements/paper-item",
+    "@polymer/paper-styles": "^3.0.1",
+    "@polymer/polymer": "^3.0.0"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
