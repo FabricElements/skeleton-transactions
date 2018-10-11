@@ -1,6 +1,7 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '@polymer/app-layout/app-toolbar/app-toolbar.js';
 import '@polymer/paper-styles/color.js';
+import './transaction-filter/transaction-filter.js';
 
 /**
  * `skeleton-transactions`
@@ -29,8 +30,9 @@ class SkeletonTransactions extends PolymerElement {
         }
       </style>
       <app-toolbar>
-        <div main-title>Your Transactions</div>
+        <div main-title>[[title]]</div>
       </app-toolbar>
+      <transaction-filter period="{{period}}" date="{{date}}"></transaction-filter>
     `;
   }
 
@@ -40,9 +42,27 @@ class SkeletonTransactions extends PolymerElement {
    */
   static get properties() {
     return {
-      prop1: {
+      title: {
         type: String,
-        value: 'skeleton-transactions',
+        value: 'Your Transactions',
+      },
+      /**
+       * Gets or sets the selected period.
+       */
+      period: {
+        type: String,
+        value: 'daily',
+        reflectToAttribute: true,
+        notify: true,
+      },
+      /**
+       * Gets or sets the selected date.
+       */
+      date: {
+        type: Number,
+        value: 1,
+        reflectToAttribute: true,
+        notify: true,
       },
     };
   }
