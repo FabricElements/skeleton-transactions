@@ -33,6 +33,7 @@
     "@polymer/iron-iconset-svg": "^3.0.1",
     "@polymer/paper-item": "github:PolymerElements/paper-item",
     "@polymer/paper-styles": "^3.0.1",
+    "@polymer/paper-tabs": "^3.0.1",
     "@polymer/polymer": "^3.0.0"
   },
   "devDependencies": {
